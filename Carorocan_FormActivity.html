@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> HTML Form</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: pink;
+    }
+</style>
+<body>
+
+  <h1>HTML Form</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </p>
+
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Gender</legend>
+
+      <p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobbies</legend>
+
+      <p>
+        <input type="checkbox" name="hobbies" id="reading" value="reading">
+        <label for="reading">Sleeping</label><br>
+
+        <input type="checkbox" name="hobbies" id="traveling" value="traveling">
+        <label for="traveling">Traveling</label><br>
+
+        <input type="checkbox" name="hobbies" id="sports" value="sports">
+        <label for="sports">Sports</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="comments">Additional Comments:</label><br>
+      <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+
+  </form>
+
+</body>
+</html>
